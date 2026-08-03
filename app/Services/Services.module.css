@@ -1,0 +1,254 @@
+.servicesSection {
+  width: 100%;
+  padding: 6rem 0;
+  color: white;
+  background: #0f0f14;
+}
+
+/* Container */
+.servicesContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.sectionLabel {
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.sectionTitle {
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-family: "Unbounded", sans-serif;
+}
+
+.sectionSubtitle {
+  width: min(600px, 90%);
+  margin: auto;
+  color: #9b9b9b;
+  margin-bottom: 4rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* GRID */
+.servicesGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* CARD */
+.serviceCard {
+  border: 1px solid #2c2c2c;
+  border-radius: 15px;
+  padding: 2.5rem 1.8rem;
+  text-align: left;
+  background: #15151c;
+  transition: 0.35s ease;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeUp 0.8s forwards ease;
+}
+
+.serviceCard:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-10px);
+}
+
+/* Card Top */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.serviceId {
+  font-size: 3.5rem;
+  -webkit-text-stroke: 1px #6b6b6b;
+  color: transparent;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.serviceCard:hover .serviceId {
+  -webkit-text-stroke: 1px var(--primary-color);
+}
+
+/* Icon */
+.serviceIcon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: white;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  transition: 0.3s;
+}
+
+.serviceCard:hover .serviceIcon {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Text */
+.serviceTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s;
+}
+
+.serviceCard:hover .serviceTitle {
+  color: var(--primary-color);
+}
+
+.serviceDesc {
+  color: #b4b4b4;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cardLine {
+  width: 100%;
+  border-bottom: 1px solid #2c2c2c;
+  margin-top: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+.serviceCard:hover .cardLine {
+  border-color: var(--primary-color);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 4rem 0;
+  }
+
+  .sectionTitle {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+
+  .sectionSubtitle {
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .servicesGrid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceCard {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .serviceTitle {
+    font-size: 1.1rem;
+  }
+
+  .serviceDesc {
+    font-size: 0.9rem;
+  }
+
+  .serviceIcon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+
+  .serviceId {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .servicesSection {
+    padding: 3rem 0;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .servicesContainer {
+    padding: 0 1rem;
+  }
+
+  .servicesGrid {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .serviceCard {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .cardHeader {
+    margin-bottom: 1rem;
+  }
+
+  .serviceId {
+    font-size: 2.5rem;
+  }
+
+  .serviceIcon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+
+  .serviceTitle {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .serviceDesc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .cardLine {
+    margin-top: 1rem;
+  }
+
+  .serviceCard:hover {
+    transform: translateY(-5px);
+  }
+}
