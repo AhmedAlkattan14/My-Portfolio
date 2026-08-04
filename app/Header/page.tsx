@@ -142,7 +142,7 @@ export default function Header() {
             <Image
               src={Ahmed}
               alt="Ahmed Alkattan - Frontend Developer and UI Designer"
-              className="w-full h-full object-cover rounded-full scale-105 hover:scale-110 transition-transform duration-500 border-4 border-[var(--primary-color)]"
+              className="w-full h-full object-cover object-[50%_34%] rounded-full scale-105 hover:scale-110 transition-transform duration-500 border-4 border-[var(--primary-color)]"
               priority
               sizes="(max-width: 640px) 180px, (max-width: 768px) 200px, (max-width: 1024px) 220px, 320px"
               width={400}
@@ -155,8 +155,8 @@ export default function Header() {
       <div className="w-full border-t border-white/10 mt-10 pt-6">
         <div
           className="
-      max-w-7xl mx-auto 
-      px-4 sm:px-6 lg:px-10 
+      container mx-auto 
+      px-4 sm:px-6 lg:px-8 
       grid 
       grid-cols-2 sm:grid-cols-2 md:grid-cols-4 
       gap-6 md:gap-12 

@@ -31,7 +31,7 @@ const unbounded = Unbounded({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ahmedalkattan14.github.io"),
+  metadataBase: new URL("https://ahmedalkattan.dev"),
   title: {
     default: "Ahmed Alkattan - Frontend Developer & UI Designer",
     template: "%s | Ahmed Alkattan Portfolio"
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://ahmedalkattan.dev",
+    canonical: "/",
   },
 };
 
