@@ -31,7 +31,7 @@ const unbounded = Unbounded({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ahmedalkattan.dev"),
+  metadataBase: new URL("https://ahmedalkattan14.github.io"),
   title: {
     default: "Ahmed Alkattan - Frontend Developer & UI Designer",
     template: "%s | Ahmed Alkattan Portfolio"
